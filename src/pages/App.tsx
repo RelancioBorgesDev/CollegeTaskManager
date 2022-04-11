@@ -1,8 +1,14 @@
 import React from 'react'
+import FormularioCadastro from '../components/FormularioCadastro'
+import Navbar from '../components/Navbar'
 
 function App() {
   return (
-    <div>Hello</div>
+    <div>
+      <Navbar/>
+      <FormularioCadastro/>
+
+    </div>
   )
 }
 

@@ -1,0 +1,61 @@
+@use '../../styles/variables';
+
+.formulario{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: variables.$cerulean;
+
+    label{
+        display: flex;
+        align-self: flex-start;
+        color: #FFF;
+        font-weight: 400;
+    }
+    .tarefa_label{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    input{
+        width: 100%;
+        background-color: variables.$platinum;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        outline: none;
+        font-size: 0.8rem;
+    }
+
+    textarea{
+        width: 100%;
+        border-radius: 0.5rem;
+        outline: none;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    button{
+        width: 100%;
+        margin-top: 0.5rem;
+        border-radius: 0.2rem;
+        border: none;
+        font-weight: 700;
+        color: #fff;
+        background-color: variables.$dark-cerulean;
+        transition: all 0.2s ease;
+
+        &:hover{
+            filter: brightness(0.9);
+            cursor: pointer;
+        }
+    }
+}

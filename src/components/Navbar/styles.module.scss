@@ -1,0 +1,18 @@
+@use '../../styles/variables';
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    background-color: variables.$cerulean;
+    padding: 0.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+    }
+}
