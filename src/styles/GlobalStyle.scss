@@ -1,0 +1,19 @@
+@use './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+body{
+    background-color: variables.$honeydew;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
