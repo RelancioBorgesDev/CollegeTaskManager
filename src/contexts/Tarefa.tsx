@@ -7,7 +7,7 @@ import { ITarefaContext } from "../types/TarefaContext";
 export const TarefaContext = createContext<ITarefaContext>({} as ITarefaContext);
 
 export function TarefaContextProvider ({ children }: TarefasContextProps){
-    const criarTarefa = (data: IFormInput) => {
+    const criarTarefa = async (data: IFormInput) => {
         let tarefa =  {
             id: Math.floor(Math.random() * 65536) - 32768,
             materia: data.materia,
@@ -16,7 +16,7 @@ export function TarefaContextProvider ({ children }: TarefasContextProps){
             tarefa: data.tarefa,
           };
 
-          api.post('/tarefas', tarefa)
+          await api.post('/tarefas', tarefa)
     }
     return (
         <TarefaContext.Provider value={{criarTarefa}}>
