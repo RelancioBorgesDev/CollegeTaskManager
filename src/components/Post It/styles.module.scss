@@ -1,0 +1,46 @@
+@use '../../styles/variables';
+
+.container{
+    width: 80%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    background-color: variables.$orange;
+    color: variables.$erie-black;
+
+    button{
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    h1{
+    }
+
+    p{
+       
+       font-weight: 400;
+    }
+
+    span{
+     
+    }
+
+    h5{
+        
+    }
+}

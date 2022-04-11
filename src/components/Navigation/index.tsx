@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <ul className={styles.navigation}>
       <li>
-        <a href='#'>Cadastro</a>
+        <Link to='/'>Cadastro</Link>
       </li>
       <li>
-        <a href='#'>Tarefas</a>
+        <Link to='/Tarefas'>Tarefas</Link>
       </li>
     </ul>
   );
