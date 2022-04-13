@@ -36,6 +36,14 @@
         font-size: 0.8rem;
     }
 
+    small{
+        display: flex;
+        align-self: flex-start;
+        font-size: 0.8rem;
+        color: red;
+        font-weight: 400;
+    }
+
     textarea{
         width: 100%;
         border-radius: 0.5rem;
