@@ -14,13 +14,18 @@ export default function PostIT() {
     });
   }, []);
 
+  function handleDelete(id: number){
+    api.delete(`/tarefas/${id}`)
+
+    setPost(post.filter((item) => item.id !== id))
+  }
 
   return (
     <>
       {post.map((item) => (
-        <div className={styles.container}>
+        <div key={item.id} className={styles.container}>
           <h1>{item.materia}</h1>
-          <button>
+          <button onClick={() => handleDelete(item.id)}>
             <AiOutlineClose />
           </button>
           <p>
